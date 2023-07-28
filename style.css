@@ -160,6 +160,8 @@ grid-area:fullstack;
         border-bottom:NONE ;
     }
     header h1{
+        background-color: aqua;
+        border:2.5px  solid;
         margin-top:25px;
         margin: 5px;
     }
@@ -174,7 +176,7 @@ grid-area:fullstack;
         grid-template-rows: 350px repeat(4,200px) ; 
         grid-template-columns: 280px;
         gap:10px;
-        margin-left:5%
+        margin: 0 auto;
         }
         #container-grid div,.FULLSTACK{
             background-color: darkorange;
