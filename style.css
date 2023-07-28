@@ -1,0 +1,12 @@
+/* Styling for the header */
+header{
+    background-color:brown;
+    display:flex;
+}
+header h1{
+    background-color:red;
+    width:fit-content;
+}
+header li{
+    display:inline 
+}
