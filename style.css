@@ -126,7 +126,9 @@ grid-area:fullstack;
 
 @media only screen and (max-width: 767px) {
     body{
+        font-size: .5rem;
         background-color: bisque;
+        /* change to blurred background image */
     }
 
     .hero{
@@ -147,18 +149,34 @@ grid-area:fullstack;
     }
 
     section h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-    #container-grid {
-        margin-left:20%;
-    }
-    header li{
+
+   nav li{
+        background-color: aqua;
+        border:2.5px  solid;
         display:block;
         margin: 10px;
-        border-bottom:2.5px solid black ;
+        border-bottom:NONE ;
     }
     header h1{
-        margin-top:35px;
+        margin-top:25px;
     }
+
+    #container-grid {
+        display:grid;
+        grid-template-areas: 
+        "fullstack"
+        ;
+        grid-template-rows: 350px repeat(4,200px) ; 
+        grid-template-columns: 280px;
+        gap:20px;
+        }
+        #container-grid div,.FULLSTACK{
+            background-color: darkorange;
+        }
+        .FULLSTACK{
+        grid-area:fullstack;
+        }
 }
 /* for the hover effect make the background color of the navs appear */
