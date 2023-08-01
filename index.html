@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="reset.css">
      <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@1,100&family=Montserrat:ital@1&family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,9 +19,21 @@
         
         <nav>
             <ul>
-                <li>About Me</li>
-                <li> Work</li>
-                <li> Contact Me</li>
+                <li>
+                    <a href="#about">
+                     About Me
+                    </a>
+                </li>
+                <li> 
+                    <a href="#about">
+                        Work
+                       </a>
+                </li>
+                <li> 
+                    <a href="#contact">
+                        Contact Me
+                       </a>
+                </li>
                 <li> Resume</li>
             </ul>
         </nav>
@@ -26,45 +42,55 @@
 
 
         <div class="hero">
-                <p>add some about me content along with fun fact for tablet size</p>
+                <p></p>
         </div>
-
-        <section class="about">
+        
+        <section class="about" id="about">
             <aside>
                 <h2>About </h2>
             </aside>
 
             <article>
-                <p> somethinsfsdfsodjnzfisdjnfsidzjnfisdnzfiasnisdflbnfisladnfsidnbdsfnasisdufnsadifung</p>
-                <p>dzfimonadnifoaNFDISJ SAIJD IJDMDAOADOOJDODOSFNJOSNDFONFDFON</p>
+                <p> </p>
+            </article>
             </article>
         </section>
 
-            <section class="work">
+            <section class="work" id="work">
                 <aside>
                     <h2>Work</h2>
                 </aside>
 
             <div id="container-grid">
                 <div class="FULLSTACK">
-                    <p> Fullstack</p>
+                    <div class="project title">
+
+                    </div>
                 </div>
                 
-                <div class="project">
-                    <p> something</p>
+                <div class="projects">
+                    <div class="project title">
+
+                    </div>
                 </div>
             
                 <div class="projects">
-                    <p> something</p>
+                    <div class="title">
+                        
+                    </div>
                 </div>
 
-                <div class="project">
-                    <p> something</p>
+                <div class="projects">
+                    <div class="title">
+                        
+                    </div>
                 </div>
 
                 
                 <div class="projects">
-                    <p> something</p>
+                    <div class="title">
+                        
+                    </div>
                 </div>
 
 
@@ -74,18 +100,19 @@
     </main>
 
     <footer>
-        <section>
+        <section class='contact' id="contact">
         <aside>
-            <h2>Contact </h2>
+            <h2>Contact</h2>
         </aside>
         
         <nav>
             <ul>
-                <li>phone number</li>
-                <li> email</li>
-                <li> github</li>
-                <li> twitter</li>  
-                <li>Spotify</li>              
+                <li>Phone Number</li>
+                <li> Email</li>
+                <li>
+                    <a href="https://github.com/BeginnerLevelUP" target="_blank">Github</a> 
+                    </li>  
+                           <!-- use js so when you click on the link it changes the content to the respective value execpt for github -->
             </ul>
         </nav>             
     </section>
