@@ -70,20 +70,19 @@ for(let i=0;i<work.children.length;i++){
     }
   }
 })
+
 //Change innerHtml of phone number and email when you click
-
-
   const phoneNum=document.getElementById('phoneNum');
   const email=document.getElementById('email')
 
   phoneNum.addEventListener('click',function(){
     phoneNum.innerHTML='718-724-9000';
   })
-  
+
   email.addEventListener('click',function(){
     email.innerHTML='morgandamion5680@gmail.com'
   })
 
+
   
-// Handle Bars
-// mkae sure all images has fonts
+

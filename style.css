@@ -3,6 +3,7 @@
     text-align: center;
     transition:1s;
     font-family:var(--regFont);
+
 }
 /* Body and colors */
 :root{
@@ -18,7 +19,7 @@
 body{
     background-color:var(--background);
 }
-/* when you hover on projects size increase others decerasae */
+
 
 /* Styling for the header */
 header{
@@ -113,8 +114,8 @@ section aside{
 }
 #container-grid  .title:hover,#carouselExampleFade .title:hover{
     width:280px;
-
 }
+
 /* Styling for the footer */
 footer li{
     margin:auto 80px;
@@ -139,6 +140,13 @@ background-color:#40806a;
 grid-area:fullstack;
 }
 
+.title p{
+    color:white;
+    padding:15% 0;
+}
+.title p:hover{
+    padding:10% 0;
+}
 /* The Carousel Coding */
 #carouselExampleFade{
 display:none;
@@ -152,13 +160,19 @@ display:none;
 #carouselExampleFade .projects .title,#carouselExampleFade .FULLSTACK  .title {
     bottom:-45%
 }
-/*Create a button for phone/tablet view to escape out of view*/
 
+#carouselExampleFade button{
+    display:none;
+    position: relative;
+    right:auto;
+}
 
 
 
 
 @media only screen and (max-width:991px) and (min-width:768px) {
+    #carouselExampleFade button{
+        display:block;}
     .work aside{
         display:block;
     }
@@ -220,6 +234,8 @@ display:none;
 }
 
 @media only screen and (max-width: 767px) {
+    #carouselExampleFade button{
+        display:block;}
     .work aside{
         display:block;
     }
@@ -285,4 +301,3 @@ display:none;
             bottom:-45%
         }
 }
-/* for the hover effect make the background color of the navs appear */
