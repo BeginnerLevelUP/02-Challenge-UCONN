@@ -2,7 +2,7 @@
 const fullstack=document.getElementsByClassName('FULLSTACK')[0]
 const projects=document.getElementsByClassName('projects')
 const work=document.getElementsByClassName('work')[0];
-
+const escButton=document.getElementsByClassName('escape')[0]
   
 /*  DECIDED TO USE BOOTSTRAP CAROUSEL
 
@@ -51,9 +51,11 @@ window.addEventListener('keydown',function(e){
 })*/
 // Full View
 const CAROUSEL=()=>{
+  escButton.style.display='block'
   work.children[0].style.display='none'
   work.children[1].style.display='none'
   work.children[2].style.display='block' 
+
 }
 fullstack.addEventListener('click',CAROUSEL)
 fullstack.addEventListener('tap',CAROUSEL)
@@ -65,12 +67,19 @@ for(let i=0;i<projects.length;i++){
 
 window.addEventListener('keydown',function(event){
   if(event.key==='Escape'){
+    escButton.style.display='none'
 for(let i=0;i<work.children.length;i++){
       work.children[i].style.display='';
     }
   }
 })
-
+// Escape FullView for tabelet/phone
+escButton.addEventListener('click',()=>{
+  escButton.style.display='none'
+  for(let i=0;i<work.children.length;i++){
+    work.children[i].style.display='';
+  }
+})
 //Change innerHtml of phone number and email when you click
   const phoneNum=document.getElementById('phoneNum');
   const email=document.getElementById('email')

@@ -140,6 +140,9 @@ background-color:#40806a;
 grid-area:fullstack;
 }
 
+.title:hover, #carouselExampleFade .title:hover{
+    opacity:.95;
+}
 .title p{
     color:white;
     padding:15% 0;
@@ -147,10 +150,33 @@ grid-area:fullstack;
 .title p:hover{
     padding:10% 0;
 }
-/* The Carousel Coding */
-#carouselExampleFade{
-display:none;
+.FULLSTACK img{
+    transition:0s;
+    width:400px;
 }
+.projects img{
+    transition:0s;
+    width:100px;
+    height:100px;
+
+}
+#carouselExampleFade .projects img{
+    transition:0s;
+    width:400px;
+    height:400px;
+}
+.FULLSTACK a ,.projects a{
+    text-decoration:none;
+}
+.FULLSTACK img ,.projects img{
+    z-index:-1;
+}
+/* The Carousel Coding */
+
+#carouselExampleFade{
+display:none; 
+}
+
 #carouselExampleFade div{
     width:1050px;
     height:650px;
@@ -160,19 +186,29 @@ display:none;
 #carouselExampleFade .projects .title,#carouselExampleFade .FULLSTACK  .title {
     bottom:-45%
 }
-
-#carouselExampleFade button{
-    display:none;
-    position: relative;
-    right:auto;
+/* Escape Button for tablet and phone view */
+.escape{
+display:none;
+margin:0 auto
 }
 
 
 
-
 @media only screen and (max-width:991px) and (min-width:768px) {
-    #carouselExampleFade button{
-        display:block;}
+    #container-grid .projects .title,#container-grid .FULLSTACK  .title  {
+        width:150px;
+    }
+    #container-grid  .title:hover{
+        width:200px;
+    }
+    #container-grid .projects img{
+        top:-50px;
+        position:relative;
+        width:100px;
+        height:100px;
+        margin-left:65%;
+    }
+    
     .work aside{
         display:block;
     }
@@ -234,8 +270,28 @@ display:none;
 }
 
 @media only screen and (max-width: 767px) {
-    #carouselExampleFade button{
-        display:block;}
+    #container-grid .projects .title,#container-grid .FULLSTACK  .title  {
+        width:100px;
+    }
+    #container-grid  .title:hover{
+        width:150px;
+    }
+    #container-grid .projects img{
+        left:80px;
+        top:-30px;
+        position:relative;
+        width:100px;
+        height:100px;
+        margin-left:5%;
+    }
+
+    .FULLSTACK img{
+        width:200px;
+    }
+    #carouselExampleFade   .FULLSTACK img,#carouselExampleFade   .title img{
+        margin-top:30%;
+    }
+
     .work aside{
         display:block;
     }
