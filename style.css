@@ -47,12 +47,14 @@ nav li{
     border-bottom:2.5px solid var(--textColor) ;
     padding:5px auto;
     font-family:var(--listFont);
+
 }
 nav li:hover{
+    text-decoration:none;
     background-color:var(--accent);
     border:1px  solid white;
 }
-nav a{
+nav a, nav a:hover{
     text-decoration:none;
     color:inherit;
 }
@@ -99,20 +101,23 @@ section aside{
 #container-grid div:hover{
     filter:brightness(100%)
 }
-#container-grid .projects .title,#container-grid .FULLSTACK  .title{
+#container-grid .projects .title,#container-grid .FULLSTACK  .title ,#carouselExampleFade .projects .title,#carouselExampleFade .FULLSTACK  .title {
     background-color:#343434;
     height:80px;
     width:200px;
     position:relative;
     bottom:-30%;
 }
-#container-grid .FULLSTACK .title{
+#container-grid .FULLSTACK .title {
     bottom:-50%;
 }
+#container-grid  .title:hover,#carouselExampleFade .title:hover{
+    width:280px;
 
+}
 /* Styling for the footer */
 footer li{
-    margin:auto 100px;
+    margin:auto 80px;
 }
 
 /* styling for the work section*/
@@ -126,7 +131,7 @@ grid-template-columns: 500px 500px;
 gap:10px;
 }
 
-#container-grid div,.FULLSTACK{
+.projects,.FULLSTACK{
 background-color:#40806a;
 }
 
@@ -134,6 +139,20 @@ background-color:#40806a;
 grid-area:fullstack;
 }
 
+/* The Carousel Coding */
+#carouselExampleFade{
+display:none;
+}
+#carouselExampleFade div{
+    width:1050px;
+    height:650px;
+    margin:0 auto;
+}
+
+#carouselExampleFade .projects .title,#carouselExampleFade .FULLSTACK  .title {
+    bottom:-45%
+}
+/*Create a button for phone/tablet view to escape out of view*/
 
 
 
@@ -189,6 +208,15 @@ grid-area:fullstack;
             border:2.5px  solid var(--textColor);
         }
 
+        #carouselExampleFade div{
+            width:800px;
+            height:500px;
+            margin:0 auto;
+        }
+        
+        #carouselExampleFade .projects .title,#carouselExampleFade .FULLSTACK  .title {
+            bottom:-45%
+        }
 }
 
 @media only screen and (max-width: 767px) {
@@ -246,6 +274,15 @@ grid-area:fullstack;
 
         .FULLSTACK{
         grid-area:fullstack;
+        }
+        #carouselExampleFade div{
+            width:400px;
+            height:600px;
+            margin:0 auto;
+        }
+        
+        #carouselExampleFade .projects .title,#carouselExampleFade .FULLSTACK  .title {
+            bottom:-45%
         }
 }
 /* for the hover effect make the background color of the navs appear */
