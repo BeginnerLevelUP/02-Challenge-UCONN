@@ -155,15 +155,19 @@ grid-area:fullstack;
     width:400px;
 }
 .projects img{
+    position: relative;
+    bottom:80px;
+    left:80px;
     transition:0s;
-    width:100px;
-    height:100px;
+    width:200px;
+    height:200px;
 
 }
 #carouselExampleFade .projects img{
     transition:0s;
     width:400px;
     height:400px;
+
 }
 .FULLSTACK a ,.projects a{
     text-decoration:none;
@@ -267,6 +271,16 @@ margin:0 auto
         #carouselExampleFade .projects .title,#carouselExampleFade .FULLSTACK  .title {
             bottom:-45%
         }
+        
+        .projects img{
+            position:relative;
+            bottom:0px;
+            left:0px;
+            transition:0s;
+            width:200px;
+            height:200px;
+        
+        }
 }
 
 @media only screen and (max-width: 767px) {
@@ -355,5 +369,15 @@ margin:0 auto
         
         #carouselExampleFade .projects .title,#carouselExampleFade .FULLSTACK  .title {
             bottom:-45%
+        }
+
+        .projects img{
+            position: relative;
+            bottom:0px;
+            left:80px;
+            transition:0s;
+            width:200px;
+            height:200px;
+        
         }
 }
